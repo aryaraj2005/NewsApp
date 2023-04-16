@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.newsapp.ui.zee.HomeFragment"
+        android:label="Zee News"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_foxmenuFragments"
+            app:destination="@id/foxmenuFragments" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.newsapp.ui.gallery.GalleryFragment"
+        android:label="Aaj Tak"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.newsapp.ui.slideshow.SlideshowFragment"
+        android:label="Hindustan Time"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/bbcmenuFragments"
+        android:name="com.example.newsapp.Fragments.BbcFragment"
+        android:label="Abp News"
+        tools:layout="@layout/fragment_bbc" />
+    <fragment
+        android:id="@+id/foxmenuFragments"
+        android:name="com.example.newsapp.Fragments.FoxFragment"
+        android:label="News 24"
+        tools:layout="@layout/fragment_fox" />
+    <fragment
+        android:id="@+id/nyFragments"
+        android:name="com.example.newsapp.Fragments.FoxeschannelusFragment"
+        android:label="Fox News"
+        tools:layout="@layout/fragment_foxeschannelus" />
+</navigation>

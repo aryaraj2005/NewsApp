@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single"
+        tools:ignore="ExtraText">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/zee"
+            android:menuCategory="secondary"
+            android:title="@string/zee_news"
+            />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ajjtk"
+            android:menuCategory="secondary"
+
+            android:title="@string/aaj_tak" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ht"
+            android:menuCategory="secondary"
+            android:title="@string/hindustan_time" />
+        <item
+        android:id="@+id/foxmenuFragments"
+        android:icon="@drawable/ic_baseline_live_tv_24"
+            android:menuCategory="secondary"
+            android:title="@string/news_24" />
+
+        <item
+           android:id="@+id/bbcmenuFragments"
+            android:icon="@drawable/ic_baseline_abc_24"
+
+            android:menuCategory="secondary"
+            android:title="Abp news" />
+    </group>
+          <item android:title="Upcoming"
+              android:menuCategory="secondary"
+              >
+               <menu >
+                  <item
+                        android:id="@+id/nyFragments"
+                        android:icon="@drawable/ic_baseline_fiber_new_24"
+
+                      android:menuCategory="secondary"
+                        android:title="@string/new_york_time"
+                   />
+        </menu>
+
+
+
+    </item>
+
+
+
+</menu>
